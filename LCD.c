@@ -147,7 +147,7 @@ void lcd_command(unsigned char cmd)
 void lcd_data(unsigned char data)
 {
     LCD_DATA = data;
-    rs=0;
+    rs=1;
     rw=0;
     en=1;
     msdelay(15);
